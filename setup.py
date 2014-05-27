@@ -2,6 +2,10 @@ import os
 
 from setuptools import setup, find_packages
 
+here = os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(here, 'README.md')) as f:
+    README = f.read()
+
 requires = [
     'beautifulsoup4',
     'lxml'
@@ -16,6 +20,7 @@ setup(name='cobertura2clover',
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
         ],
+      long_description=README,
       author='',
       author_email='',
       url='',
