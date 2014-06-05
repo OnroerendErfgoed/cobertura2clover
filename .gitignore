@@ -1,2 +1,5 @@
 # Gedit temp files
 *.*~
+dist/
+*.pyc
+cobertura2clover.egg-info/
